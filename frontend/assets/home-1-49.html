@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>home – 1:49</title>
+  <meta name="viewport" content="width=430, initial-scale=1" />
+  <link rel="stylesheet" href="./common.css" />
+  <link rel="stylesheet" href="./home-1-49.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Load fonts for typography tokens -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lobster&family=Poppins:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="screen home r-35" role="main" aria-label="home screen">
+    <!-- Title -->
+    <h1 id="foodgo" class="abs typo-5 text-3c2f2f">Foodgo</h1>
+
+    <!-- Subtitle -->
+    <p id="subtitle" class="abs typo-6 text-6a6a6a">Order your favourite food!</p>
+
+    <!-- Mask group (avatar) -->
+    <div id="mask-group" class="abs" aria-hidden="true">
+      <div id="mask-bg" class="abs r-20"></div>
+      <img id="mask-img" src="./figmaimages/figma_image_1_54.png" alt="" />
+    </div>
+
+    <!-- Search Row -->
+    <div id="search-card" class="abs r-20 shadow-0" aria-label="search input mock"></div>
+    <div id="search-icon" class="abs icon svg-fill-dark" aria-hidden="true">
+      <!-- simplified search icon -->
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="#3c2f2f" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79L20 21.5 21.5 20 15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+      </svg>
+    </div>
+    <span id="search-text" class="abs typo-7 text-3c2f2f">Search</span>
+
+    <!-- Filter Button -->
+    <div id="filter-btn" class="abs r-20 shadow-1" aria-hidden="true"></div>
+    <div id="filter-icon" class="abs icon svg-fill-white" aria-hidden="true">
+      <!-- settings sliders simplified -->
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 7h11v2H3V7zm0 8h11v2H3v-2zm13-6h5v2h-5V9zm0 8h5v2h-5v-2zM8 5h2v6H8V5zm0 8h2v6H8v-6z" />
+      </svg>
+    </div>
+
+    <!-- Chips -->
+    <div id="chip-all-bg" class="abs r-20 center-flex text-ffffff typo-8">All</div>
+    <span id="chip-all-text" class="abs typo-8 text-ffffff">All</span>
+
+    <div id="chip-combos-bg" class="abs r-20 center-flex"></div>
+    <span id="chip-combos-text" class="abs typo-9">Combos</span>
+
+    <div id="chip-sliders-bg" class="abs r-20 center-flex"></div>
+    <span id="chip-sliders-text" class="abs typo-9">Sliders</span>
+
+    <div id="chip-classic-bg" class="abs r-20 center-flex"></div>
+    <span id="chip-classic-text" class="abs typo-9">Classic</span>
+
+    <!-- Cards -->
+    <section id="card-a" class="card r-20 abs" aria-label="Cheeseburger Wendy's Burger"></section>
+    <img id="img-a" src="./figmaimages/figma_image_1_83.png" alt="Cheeseburger Wendy's Burger image" />
+    <div id="ellipse-a" aria-hidden="true"></div>
+    <div id="rating-a" class="rating">
+      <svg class="star" viewBox="0 0 24 24" fill="#ff9633" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.847 1.417 8.262L12 19.771 4.583 23.857 6 15.595 0 9.748l8.332-1.73z"/></svg>
+      <span class="value">4.9</span>
+    </div>
+    <div class="abs typo-10 text-3c2f2f" id="title-a">Cheeseburger Wendy's Burger</div>
+
+    <section id="card-b" class="card r-20 abs" aria-label="Hamburger Veggie Burger"></section>
+    <img id="img-b" src="./figmaimages/figma_image_1_92.png" alt="Hamburger Veggie Burger image" />
+    <div id="ellipse-b" aria-hidden="true"></div>
+    <div id="rating-b" class="rating">
+      <svg class="star" viewBox="0 0 24 24" fill="#ff9633" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.847 1.417 8.262L12 19.771 4.583 23.857 6 15.595 0 9.748l8.332-1.73z"/></svg>
+      <span class="value">4.8</span>
+    </div>
+    <div class="abs typo-10 text-3c2f2f" id="title-b">Hamburger <br/>Veggie Burger</div>
+
+    <section id="card-c" class="card r-20 abs" aria-label="Hamburger Chicken Burger"></section>
+    <img id="img-c" src="./figmaimages/figma_image_1_101.png" alt="Hamburger Chicken Burger image" />
+    <div id="ellipse-c" aria-hidden="true"></div>
+    <div id="rating-c" class="rating">
+      <svg class="star" viewBox="0 0 24 24" fill="#ff9633" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.847 1.417 8.262L12 19.771 4.583 23.857 6 15.595 0 9.748l8.332-1.73z"/></svg>
+      <span class="value">4.6</span>
+    </div>
+    <div class="abs typo-10 text-3c2f2f" id="title-c">Hamburger <br/>Chicken Burger</div>
+
+    <section id="card-d" class="card r-20 abs" aria-label="Hamburger Fried Chicken Burger"></section>
+    <img id="img-d" src="./figmaimages/figma_image_1_110.png" alt="Hamburger Fried Chicken Burger image" />
+    <div id="ellipse-d" aria-hidden="true"></div>
+    <div id="rating-d" class="rating">
+      <svg class="star" viewBox="0 0 24 24" fill="#ff9633" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431L24 9.748l-6 5.847 1.417 8.262L12 19.771 4.583 23.857 6 15.595 0 9.748l8.332-1.73z"/></svg>
+      <span class="value">4.5</span>
+    </div>
+    <div class="abs typo-10 text-3c2f2f" id="title-d">Hamburger <br/>Fried Chicken Burger</div>
+
+    <!-- Bottom bar and icons -->
+    <div id="bottom-bar" aria-hidden="true"></div>
+    <div id="bottom-ellipse-left" aria-hidden="true"></div>
+    <div id="bottom-ellipse-mid-left" aria-hidden="true"></div>
+    <div id="bottom-ellipse-mid-right" aria-hidden="true"></div>
+
+    <div id="icon-home" class="icon" aria-hidden="true">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 3l9 8h-3v10h-5V15H11v6H6V11H3l9-8z"/>
+      </svg>
+    </div>
+    <div id="icon-user" class="icon" aria-hidden="true">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/>
+      </svg>
+    </div>
+    <div id="icon-comment" class="icon" aria-hidden="true">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 3h20v14H6l-4 4V3zm6 6h10v2H8V9zm0-4h12v2H8V5z"/>
+      </svg>
+    </div>
+    <div id="icon-heart-solid" class="icon" aria-hidden="true">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 21s-8-4.438-8-11c0-2.761 2.239-5 5-5 2.086 0 3.885 1.269 4.6 3.09C14.115 6.269 15.914 5 18 5c2.761 0 5 2.239 5 5 0 6.562-8 11-8 11h-3z"/>
+      </svg>
+    </div>
+
+    <!-- Floating Action Button -->
+    <div id="fab" aria-label="Add"></div>
+    <div id="plus-h" aria-hidden="true"></div>
+    <div id="plus-v" aria-hidden="true"></div>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

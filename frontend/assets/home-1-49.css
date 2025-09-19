@@ -1,0 +1,202 @@
+.screen.home {
+  width: 430px;
+  height: 932px;
+  background: var(--color-ffffff);
+  border-radius: var(--radius-35);
+}
+
+/* Title Foodgo */
+#foodgo {
+  left: 19px; /* normalized from figma translating frame to 0,0: -991 - (-1010) = 19 */
+  top: 28px;  /* -978 - (-1006) = 28 */
+  width: 129px; height: 61px;
+}
+
+/* Subtitle */
+#subtitle {
+  left: 19px; top: 89px;
+  width: 238px; height: 27px;
+}
+
+/* Profile mask group */
+#mask-group {
+  left: 351px; top: 28px;
+  width: 60px; height: 60px; position: absolute;
+}
+#mask-bg {
+  left: 0; top: 0; width: 60px; height: 60px;
+  border-radius: var(--radius-20);
+  background: var(--color-d9d9d9);
+}
+#mask-img {
+  position: absolute;
+  left: -29px; top: -3px; width: 106px; height: 73px;
+  object-fit: cover; border-radius: var(--radius-20);
+  clip-path: inset(0 round var(--radius-20));
+}
+
+/* Search group (left) */
+#search-card {
+  left: 19px; top: 163px; width: 319px; height: 60px;
+  background: var(--color-ffffff);
+  border-radius: var(--radius-20);
+  box-shadow: var(--shadow-0);
+}
+#search-icon {
+  left: 39px; top: 181px; width: 24px; height: 24px;
+}
+#search-text {
+  left: 87px; top: 182px; width: 56px; height: 21px;
+}
+
+/* Filter button (right) */
+#filter-btn {
+  left: 351px; top: 163px; width: 60px; height: 60px;
+  background: var(--color-ef2a39);
+  border-radius: var(--radius-20);
+  box-shadow: var(--shadow-1);
+}
+#filter-icon {
+  left: 369px; top: 181px; width: 24px; height: 24px;
+}
+
+/* Chips row container (used only for visual grouping) */
+/* Chip: All (active) */
+#chip-all {
+  left: 19px; top: 264px; width: 75px; height: 50px;
+}
+#chip-all-bg {
+  left: 19px; top: 264px; width: 75px; height: 50px;
+  background: var(--color-ef2a39);
+  border-radius: var(--radius-20);
+  box-shadow: var(--shadow-1);
+}
+#chip-all-text {
+  left: 46px; top: 279px; width: 20px; height: 19px;
+}
+
+/* Chip: Combos */
+#chip-combos-bg {
+  left: 128px; top: 264px; width: 120px; height: 50px;
+  background: var(--color-f3f4f6);
+  border-radius: var(--radius-20);
+}
+#chip-combos-text {
+  left: 156px; top: 279px; width: 64px; height: 19px;
+  color: var(--color-6a6a6a);
+}
+
+/* Chip: Sliders */
+#chip-sliders-bg {
+  left: 262px; top: 264px; width: 120px; height: 50px;
+  background: var(--color-f3f4f6);
+  border-radius: var(--radius-20);
+}
+#chip-sliders-text {
+  left: 295px; top: 280px; width: 53px; height: 19px;
+  color: var(--color-6a6a6a);
+}
+
+/* Chip: Classic */
+#chip-classic-bg {
+  left: 396px; top: 264px; width: 110px; height: 50px;
+  background: var(--color-f3f4f6);
+  border-radius: var(--radius-20);
+}
+#chip-classic-text {
+  left: 423px; top: 279px; width: 56px; height: 19px;
+  color: var(--color-6a6a6a);
+}
+
+/* Cards grid - Group 10 (top-left) */
+.card {
+  position: absolute;
+  width: 185px; height: 225px;
+  background: var(--color-ffffff);
+  border-radius: var(--radius-20);
+  box-shadow: var(--shadow-2);
+}
+#card-a { left: 19px; top: 351px; }
+#card-b { left: 226px; top: 351px; }
+#card-c { left: 19px; top: 607px; }
+#card-d { left: 226px; top: 607px; }
+
+.card .heart {
+  position: absolute; width: 24px; height: 24px;
+}
+#card-a .heart { left: 150px; top: 186px; }
+#card-b .heart { left: 357px; top: 186px; } /* absolute coordinates adjusted globally via specific overrides below */
+#card-c .heart { left: 150px; top: 442px; }
+#card-d .heart { left: 357px; top: 442px; }
+
+/* Ellipse shadows (ground under image) */
+#ellipse-a { position: absolute; left: 66px; top: 390px; width: 91px; height: 11px; background: var(--color-000000); border-radius: 50%; opacity: 1; }
+#ellipse-b { position: absolute; left: 273px; top: 391px; width: 91px; height: 11px; background: var(--color-000000); border-radius: 50%; }
+#ellipse-c { position: absolute; left: 92px; top: 642px; width: 110px; height: 15.7609px; background: var(--color-000000); border-radius: 50%; }
+#ellipse-d { position: absolute; left: 186.5px; top: 647px; width: 112px; height: 11px; background: var(--color-000000); border-radius: 50%; }
+
+/* Images in cards */
+#img-a { position: absolute; left: 51px; top: 360px; width: 120px; height: 121.7578px; object-fit: contain; }
+#img-b { position: absolute; left: 258px; top: 371px; width: 120px; height: 120px; object-fit: contain; }
+#img-c { position: absolute; left: 39px; top: 351px; width: 150px; height: 137.7000px; object-fit: contain; }
+#img-d { position: absolute; left: 50px; top: 395px; width: 145px; height: 100.5938px; object-fit: contain; }
+
+/* Titles */
+#title-a { position: absolute; left: 30px; top: 487px; width: 117px; height: 44px; }
+#title-b { position: absolute; left: 237px; top: 487px; width: 117px; height: 44px; }
+#title-c { position: absolute; left: 30px; top: 743px; width: 117px; height: 44px; }
+#title-d { position: absolute; left: 237px; top: 743px; width: 158px; height: 44px; }
+
+/* Ratings (star + text) */
+.rating { position: absolute; display: flex; align-items: center; gap: 4px; }
+#rating-a { left: 30px; top: 546px; width: 44px; height: 22px; }
+#rating-b { left: 237px; top: 546px; width: 44px; height: 22px; }
+#rating-c { left: 30px; top: 802px; width: 44px; height: 22px; }
+#rating-d { left: 237px; top: 802px; width: 44px; height: 22px; }
+
+.rating .star { width: 16px; height: 16px; color: var(--color-ff9633); }
+.rating .value { font-family: var(--font-Roboto); font-size: var(--typo-11-size); line-height: var(--typo-11-line); color: var(--color-3c2f2f); }
+
+/* Bottom bar (Subtract + Ellipses) */
+#bottom-bar {
+  position: absolute; left:  -19px; top: 856px; /* -1029 -(-1010)= -19, -150 -(-1006)=856 */
+  width: 456px; height: 90px; background: var(--color-ef2a39);
+  border-top-left-radius: 24px; border-top-right-radius: 24px;
+}
+#bottom-ellipse-left {
+  position: absolute; left: 103px; top: 815px; width: 82px; height: 82px;
+  background: var(--color-d9d9d9); border-radius: 50%;
+  opacity: 1;
+}
+#bottom-ellipse-mid-left {
+  position: absolute; left: 103px; top: 856px; width: 82px; height: 82px;
+  background: var(--color-ef2a39); border-radius: 50%;
+}
+#bottom-ellipse-mid-right {
+  position: absolute; left: 245px; top: 856px; width: 82px; height: 82px;
+  background: var(--color-ef2a39); border-radius: 50%;
+}
+
+/* Bottom nav icons */
+#icon-home { position: absolute; left: 31px; top: 873px; width: 24px; height: 24px; color: var(--color-ffffff); }
+#icon-user { position: absolute; left: 113px; top: 873px; width: 24px; height: 24px; color: var(--color-ffffff); }
+#icon-heart-solid { position: absolute; left: 354px; top: 873px; width: 24px; height: 24px; color: var(--color-ffffff); }
+#icon-comment { position: absolute; left: 173px; top: 873px; width: 24px; height: 24px; color: var(--color-ffffff); }
+
+/* Floating center action circle with plus */
+#fab-wrap { position: absolute; left: 199px; top: 734px; width: 72px; height: 72px; }
+#fab {
+  position: absolute; left: 199px; top: 734px; width: 72px; height: 72px;
+  background: var(--color-ef2a39); border-radius: 50%; box-shadow: var(--shadow-3);
+}
+#plus-h {
+  position: absolute; left: 213px; top: 766px; width: 16px; height: 0px; border-top: 5px solid var(--color-ffffff);
+}
+#plus-v {
+  position: absolute; left: 221px; top: 758px; width: 0px; height: 16px; border-left: 5px solid var(--color-ffffff);
+}
+
+/* Icon shapes simplified to match brand colors */
+.svg-fill-white path, .svg-fill-white rect, .svg-fill-white circle, .svg-fill-white polygon { fill: var(--color-ffffff); }
+.svg-fill-dark path, .svg-fill-dark rect, .svg-fill-dark circle, .svg-fill-dark polygon { fill: var(--color-3c2f2f); }
+.svg-stroke-white path, .svg-stroke-white line, .svg-stroke-white polyline { stroke: var(--color-ffffff); }
